@@ -1,0 +1,25 @@
+{
+  "name": "shambala",
+  "version": "2.0.0",
+  "description": "Site for Shambala minecraft server",
+  "main": "app.js",
+  "scripts": {
+    "test": "grunt tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodji/shambala.git"
+  },
+  "keywords": [
+    "javascript",
+    "shambala",
+    "html",
+    "site",
+    "minecraft"
+  ],
+  "author": "kodji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kodji/shambala/issues"
+  }
+}

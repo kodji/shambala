@@ -1,0 +1,28 @@
+{
+  "name": "shambala",
+  "version": "2.0.0",
+  "authors": [
+    "kodji <k@odj.in>"
+  ],
+  "description": "Shambala project site",
+  "main": "index.html",
+  "keywords": [
+    "js",
+    "site",
+    "html",
+    "minecraft"
+  ],
+  "license": "MIT",
+  "homepage": "http://shambala.kodji.name",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0"
+  }
+}
