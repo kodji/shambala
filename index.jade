@@ -1,33 +1,51 @@
-doctype 5
+doctype html
 html(lang="ru")
-	head
-		meta(charset="utf-8")
-		title Shambala
-		meta(name="viewport",content="width=device-width, initial-scale=1.0")
-		link(rel="stylesheet",href="libs/bootstrap/css/bootstrap.css",media="screen")
-		link(rel="stylesheet",href="css/style.css",media="screen")
-
-	body
-		.navbar.navbar-fixed-top
-			.navbar-inner
-				.container
-					a.brand(href="/")
-						| &nbsp;Shambala
-					ul.nav
-						li
-							a(href="https://dl.dropbox.com/u/150096/minecraft.jar.zip") Пропатченный клиент с Forge
-						li
-							a(href="https://dl.dropbox.com/u/150096/mods.zip") Архив модов для игры на сервере
-						li
-							a(href="skype:?chat&blob=CIY6Ru_oWePFanLqofoD3fbkbfvONkuqK--Ab0vo0mPYu248pgkPTodnKQBT3MPW8UraNk_NHtz0oviieh5Uv7kWbUpvV90DworAIUs8tu5033J8cxT8UMDLhybRHgy79IItOzbWg6-uc3YdYxf8VisVTQJCPro") Skype-чат
-						li
-							a(href="http://kodji.name") Контакты администратора
-		.container-fluid
-			.row-fluid#app
-				h3 Сейчас шамбала работает в онлайн режиме (пускает только купивших игру). Версия сервера 1.4.6, установлен мод RedPower2
-				iframe(src="http://77.72.131.101:8166",width="100%",height="600")
-			.row-fluid#footer
-				.span8
-					p &copy; Copyright <a href="http://kodji.name">kodji</a> 2010-2013
-				.span4(style="text-align:right;")
-					img(src="img/sh-logo.png",width="64",height="64")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible",content="IE=edge")
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    meta(name="description",content="сервер Minecraft версии 1.7.4 для игроков старше 18 лет. Нет вайпов, нет гриферов, концепция игры - ванильное выживание без модов. Креативщики строят в сторонке и к выживальщикам не лезут.")
+    meta(name="author",content="kodji")
+    link(rel="shortcut icon",href="favicon.ico")
+    title Shambala - русскоязычный сервер Minecraft 1.7.4 для взрослых игроков
+    link(href="/libs/bootstrap/dist/css/bootstrap.min.css",rel="stylesheet")
+    link(href="/css/style.css",rel="stylesheet")
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+  body(role="document")
+    .navbar.navbar-inverse.navbar-fixed-top(role="navigation")
+      .container
+        .navbar-header
+          button.navbar-toggle(type="button",data-toggle="collapse",data-target=".navbar-collapse")
+            span.sr-only Меню
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href="#") Shambala
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a О проекте
+            li
+              a(href="faithful32pack.zip") Рекомендуемый текстурпак
+            li
+              a(href="http://kodji.name") Контакт администратора
+    .container-fluid(role="main")
+      .row
+        .col-sm-2
+          h4 
+            Сервер Minecraft Shambala
+          p
+            | Сервер работает в режиме 24/7, пускает и официальные и неофициальные клиенты. 
+            | Версия сервера 1.7.4. Вход на сервер по адресу kodji.ru:25555. 
+            | Чтобы строить на сервере, обратитесь к администратору или оставьте заявку в 
+            a(href="https://vk.com/minecraftshambala") паблике вконтакта
+            | , по умолчанию можно только смотреть.
+        .col-sm-10
+          iframe#server_map(src="http://kodji.ru:8166",width="100%",height="500")
+      .row#footer
+        .col-sm-6
+          p &copy; Copyright <a href="http://kodji.name">kodji</a> 2010-2014
+        .col-sm-6(style="text-align:right;")
+          img(src="img/sh-logo.png",width="64",height="64")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+    script(src="/libs/bootstrap/dist/js/bootstrap.min.js")

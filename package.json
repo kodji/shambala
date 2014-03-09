@@ -1,25 +1,44 @@
 {
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-qunit": "~0.3.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "bower": "~1.2.8",
+    "grunt-contrib-jade": "~0.10.0",
+    "grunt-contrib-less": "~0.9.0"
+  },
   "name": "shambala",
+  "description": "shambala project - site",
   "version": "2.0.0",
-  "description": "Site for Shambala minecraft server",
-  "main": "app.js",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "bower": "~1.2.8",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-jade": "~0.10.0",
+    "grunt-contrib-less": "~0.9.0"
+  },
   "scripts": {
-    "test": "grunt tests"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/kodji/shambala.git"
   },
   "keywords": [
-    "javascript",
-    "shambala",
-    "html",
-    "site",
-    "minecraft"
+    "shambala"
   ],
   "author": "kodji",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kodji/shambala/issues"
-  }
+  },
+  "homepage": "https://github.com/kodji/shambala"
 }
