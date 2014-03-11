@@ -27,7 +27,7 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['less/**/*','js/**/*','*.jade','Gruntfile.js'],
+      files: ['less/**/*','js/**/*','*.jade','templates/**/*','Gruntfile.js'],
       tasks: ['jade:prod','less:prod'] 
     }
   });
