@@ -1,0 +1,14 @@
+doctype html
+html(lang="ru")
+  include ../templates/head.jade
+  body(role="document")
+    include ../templates/menu.jade
+    +menu('/index.html')
+    .container-fluid(role="main")
+      .row
+        .col-sm-3
+          +sidemenu('/index.html')
+        .col-sm-9
+          iframe#server_map(src="http://kodji.ru:8166",width="100%",height="500")
+      include ../templates/footer.jade
+    include ../templates/scripts.jade

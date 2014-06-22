@@ -1,0 +1,14 @@
+doctype html
+html(lang="ru")
+  include ../templates/head.jade
+  body(role="document")
+    include ../templates/menu.jade
+    +menu('/commands.html')
+    .container-fluid(role="main")
+      .row
+        .col-sm-3
+          +sidemenu('/commands.html')
+        .col-sm-9
+          h2 TEMPLATE
+      include ../templates/footer.jade
+    include ../templates/scripts.jade

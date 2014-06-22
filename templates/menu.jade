@@ -1,0 +1,30 @@
+mixin menu(cur)
+  .navbar.navbar-inverse.navbar-static(role="navigation")
+    .container
+      .navbar-header
+        button.navbar-toggle(type="button",data-toggle="collapse",data-target=".navbar-collapse")
+          span.sr-only Меню
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href="#") 
+          img.logo(src="/img/logo160.png",width="32",height="32")
+      .navbar-collapse.collapse
+        ul.nav.navbar-nav
+          each i in main_menu
+            if i.h == cur
+              li.active
+                a= i.l
+            else 
+              li
+                a(href="#{i.h}") #{i.l}
+
+mixin sidemenu(cur)
+  ul.nav.nav-pills.nav-stacked
+    each i in side_menu
+      if i.h == cur
+        li.active
+          a= i.l
+      else 
+        li
+          a(href="#{i.h}") #{i.l}

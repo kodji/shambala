@@ -4,11 +4,18 @@ module.exports = function(grunt) {
     jade: {
       prod:{
         options: {
-          pretty: false
+          pretty: false,
+          data: grunt.file.readJSON("config.json")
         },
-        files: {
-          '../dist/index.html': ['index.jade']
-        }        
+        files: [
+          {
+            cwd: "pages",
+            src: ["**/*.jade"],
+            dest: "../dist",
+            expand: true,
+            ext: ".html"
+          }
+        ]
       }
     },
     less: {
@@ -27,7 +34,7 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['less/**/*','js/**/*','*.jade','templates/**/*','Gruntfile.js'],
+      files: ['less/**/*','js/**/*','*.jade','templates/**/*','pages/**/*','Gruntfile.js'],
       tasks: ['jade:prod','less:prod'] 
     }
   });

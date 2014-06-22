@@ -1,0 +1,28 @@
+doctype html
+html(lang="ru")
+  include ../templates/head.jade
+  body(role="document")
+    include ../templates/menu.jade
+    +menu('/news.html')
+    .container-fluid(role="main")
+      .row
+        .col-sm-3
+          +sidemenu('/news.html')
+        .col-sm-9
+          h3 Последние новости
+          p 
+            span.badge.success 22.06.2014
+            | &nbsp;
+            span Пришло время немного расширить, улучшить и углубить сайт проекта. Встречайте отдельные разделы для описания плагинов, часто задаваемых вопросов и прочих полезных в игре мелочей.
+          p 
+            span.badge.success 09.06.2014
+            | &nbsp;
+            span Обновлены плагины до последних версий. 
+          p 
+            span.badge.success 25.05.2014
+            | &nbsp;
+            | Мы решили 
+            a(href="https://vk.com/topic-56170768_30202643") ввести в игру экономику
+            | и установили плагин ChestShop. Рынок, админшоп и все такое.
+      include ../templates/footer.jade
+    include ../templates/scripts.jade

@@ -1,0 +1,19 @@
+doctype html
+html(lang="ru")
+  include ../templates/head.jade
+  body(role="document")
+    include ../templates/menu.jade
+    +menu('/wtf.html')
+    .container-fluid(role="main")
+      .row
+        .col-sm-3
+          +sidemenu('/wtf.html')
+        .col-sm-9
+          h2 Если у вас что-то не получается.
+          ol
+            li Почитайте разделы про установленные плагины и документацию к ним
+            li Задайте вопрос в игровом чате или в чате скайпа (если вас в нем нет - попросите любого игрока добавить) 
+            li Задайте вопрос любому оператору (ник в игре красным цветом) или администратору
+          p Мы будем пополнять эту страницу часто задаваемыми вопросами и ответами на них, как только они будут появляться.
+      include ../templates/footer.jade
+    include ../templates/scripts.jade
