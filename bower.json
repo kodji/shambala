@@ -26,6 +26,7 @@
     "jquery": "~2.1.0",
     "bootstrap": "~3.1.1",
     "requirejs": "~2.1.10",
-    "knockoutjs": "~3.0.0"
+    "knockoutjs": "~3.0.0",
+    "svg.js": "~1.0.0"
   }
 }
