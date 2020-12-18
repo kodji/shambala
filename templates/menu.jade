@@ -27,4 +27,7 @@ mixin sidemenu(cur)
           a= i.l
       else 
         li
-          a(href="#{i.h}") #{i.l}
+          if i.blank
+            a(href="#{i.h}", target="_blank") #{i.l}
+          else
+            a(href="#{i.h}") #{i.l}

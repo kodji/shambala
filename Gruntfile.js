@@ -11,7 +11,7 @@ module.exports = function(grunt) {
           {
             cwd: "pages",
             src: ["**/*.jade"],
-            dest: "../www/kodji.ru",
+            dest: "../frontend",
             expand: true,
             ext: ".html"
           }
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          "../www/kodji.ru/css/style.css": "less/style.less"
+          "../frontend/css/style.css": "less/style.less"
         }
       }
     },
